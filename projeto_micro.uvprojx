@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
 
   <SchemaVersion>2.1</SchemaVersion>
@@ -382,15 +382,42 @@
       <Groups>
         <Group>
           <GroupName>Source Group 1</GroupName>
-        <Files><File><FileName>enunciado.c</FileName><FileType>1</FileType><FilePath>.\src\Lab_Interrupções\enunciado.c</FilePath></File><File><FileName>enunciado_led.c</FileName><FileType>1</FileType><FilePath>.\src\Lab_Leds\enunciado_led.c</FilePath></File><File><FileName>pisca1led.s</FileName><FileType>2</FileType><FilePath>.\src\Lab_Leds\pisca1led.s</FilePath></File><File><FileName>Lab1.asm</FileName><FileType>2</FileType><FilePath>.\src\Lab1.asm</FilePath></File><File><FileName>teste.s</FileName><FileType>2</FileType><FilePath>.\src\teste.s</FilePath></File></Files></Group>
+          <Files>
+            <File>
+              <FileName>enunciado.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Lab_Interrupções\enunciado.c</FilePath>
+            </File>
+            <File>
+              <FileName>enunciado_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Lab_Leds\enunciado_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>pisca1led.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\src\Lab_Leds\pisca1led.s</FilePath>
+            </File>
+            <File>
+              <FileName>Lab1.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\src\Lab1.asm</FilePath>
+            </File>
+            <File>
+              <FileName>teste.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\src\teste.s</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
 
   <RTE>
-    <apis />
-    <components />
-    <files />
+    <apis/>
+    <components/>
+    <files/>
   </RTE>
 
 </Project>

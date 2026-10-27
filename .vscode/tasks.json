@@ -5,25 +5,52 @@
       "label": "Keil: sincronizar arquivos",
       "type": "shell",
       "command": "powershell.exe",
-      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\sync_keil.ps1"],
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\sync_keil.ps1"
+      ],
       "problemMatcher": []
     },
     {
       "label": "Keil: abrir projeto",
       "type": "shell",
       "command": "powershell.exe",
-      "args": ["-NoProfile", "-Command", "Start-Process -FilePath '${workspaceFolder}\\projeto_micro.uvprojx'"],
-      "dependsOn": ["Keil: sincronizar arquivos"],
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Start-Process -FilePath '${workspaceFolder}\\projeto_micro.uvprojx'"
+      ],
+      "dependsOn": [
+        "Keil: sincronizar arquivos"
+      ],
       "problemMatcher": []
     },
     {
-      "label": "Keil: monitorar automaticamente",
+      "label": "Keil: monitorar pastas src",
       "type": "shell",
       "command": "powershell.exe",
-      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\sync_keil.ps1", "-Watch"],
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\sync_keil.ps1",
+        "-Watch"
+      ],
       "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": false
+      },
       "problemMatcher": [],
-      "presentation": {"reveal": "always", "panel": "dedicated", "clear": false}
+      "runOptions": {
+        "runOn": "folderOpen",
+        "instanceLimit": 1
+      }
     }
   ]
 }
